@@ -248,6 +248,14 @@ img{
     color: #999;
 }
 
+#tab-1-content,#tab-2-content,#tab-3-content{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
+
 /* buttons */
 .btn{
     display: inline-block;
@@ -276,4 +284,87 @@ img{
     font-size: 1.3rem;
     padding : 1.5rem 2.1rem;
     text-transform: uppercase;
+}
+
+.footer{
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: auto ;
+}
+
+.footer, .footer a{
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+
+.footer li{
+     line-height: 2.4;
+}
+
+@media(max-width:960px){
+    .showcase{
+        height: 70vh;
+    }
+    .hide-sm{
+        display: none;
+    }
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(-16%,-30%);
+    }
+    .showcase .showcase-content h1{
+        font-size: 3rem;
+        line-height: 1 ;
+    }
+    .showcase .showcase-content p{
+        font-size: 1.8rem;
+        line-height: 1 ;
+    }
+    .btn-xl{
+        font-size: 1rem;
+        padding: 1.4rem 2rem;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .footer-cols{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media(max-width: 700px){
+     #tab-1-content
+     .tab-1-content-inner  {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+     }
+
+     #tab-2-content .tab-2-content-top{
+        display: block;
+        text-align: center;
+     }
+
+     #tab-2-content .tab-2-content-bottom{
+        margin-top: 2.3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        text-align: center;
+     }
+
 }
