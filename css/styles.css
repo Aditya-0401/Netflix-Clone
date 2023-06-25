@@ -354,6 +354,12 @@ img{
         text-align: center;
      }
 
+     #tab-1-content
+     .tab-1-content-inner  img{
+        width: 50%;
+        margin: auto;
+     }
+
      #tab-2-content .tab-2-content-top{
         display: block;
         text-align: center;
